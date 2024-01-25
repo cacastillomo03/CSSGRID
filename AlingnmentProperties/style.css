@@ -13,9 +13,9 @@ html´{
     background-color: aquamarine;
     display: grid;
     gap: 15px;
-    grid-template-columns: 150px 150px 150px;
+    grid-template-columns: 150px 150px 150px; 
     grid-auto-rows: 150px;
-   height: 100vh;
+    height: 100vh;
 
    /* Propiedades de alineacion para los elementos contenedores de la grilla*/
 
@@ -37,7 +37,7 @@ html´{
 }
 
 .item2{
-    justify-self: start;
+    justify-self: start; /*con estas propiedades podemos alinear el contenido dentro de una celda*/
     align-self: end;
 }
 

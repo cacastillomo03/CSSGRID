@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+
+
+html{
+    font-size: 62.5%;
+    height: 100%;
+    background-color: aqua;
+    padding: 5px;
+}
+
+.container-grid{
+    padding: 5px;
+    min-height: 100vh;
+    display: grid;
+    gap: 5px;
+    grid-template:
+    "item1 "  150px
+    "item2 "  150px 
+    "item3"   150px
+    "item4"   
+    "item5"   
+    "item6"   
+    "item7"   
+    "item8"   
+    "item9"   
+
+    ; 
+}
+
+.item1{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+
+}
+
+.item2{
+
+   display: grid;
+   place-items: center;
+   grid-template-columns: 70px  30px  50px;
+   place-content: center;
+    place-items: center;
+}
+
+.item2 h1{
+    background-color: blue;
+    border-radius: 4px;
+}
+.item2 p{
+    background-color: lightcoral;
+    border-radius: 4px;
+}
+
+.item2 h2{
+    display: flex;
+    justify-content: center;
+    background-color: yellow;
+    width: 20px;
+}
+
+.item3{
+    padding: 10px;
+    display: flex;
+    gap: 4px;
+    flex-direction: column;
+    place-content: end;
+    
+}
+
+.item1{
+    grid-area: item1;
+}
+
+.item2{
+    grid-area: item2;
+}
+
+.item3{
+    grid-area: item3;
+}
+.item4{
+    grid-area: item4;
+}
+.item5{
+    grid-area: item5;
+}
+.item6{
+    grid-area: item6;
+}
+.item7{
+    grid-area: item7;
+}
+.item8{
+    grid-area: item8;
+}
+.item9{
+    grid-area: item9;
+}
+@media(min-width:600px){
+    .container-grid{
+        background-color: brown;
+        
+        grid-template: 
+        "item1  item1  item1" 80px
+        "item2  item2  item2" 90px
+        "item3  item4  item7" 100px
+        "item5  item5  item6"  auto
+        "item8  item8  item9"  70px/
+         200px   auto   100px
+        ;   
+    }
+}
+
+
+
+
+
+
+
+
