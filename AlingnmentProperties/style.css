@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html´{
+    font-size: 62.5%;
+}
+
+.container-grid{
+    border: 5px solid #e1bee7;
+    background-color: aquamarine;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 150px 150px 150px;
+    grid-auto-rows: 150px;
+   height: 100vh;
+
+   /* Propiedades de alineacion para los elementos contenedores de la grilla*/
+
+   /*justify-content: center;    
+   align-content: center;*  con estas dos propieddes centramos de manera horizontal y vertical los elementos del contenedor*/
+   place-content: center;  /*tambien podemos utiizar el atributo end o start para llevar los elementos a los costados.*/
+
+
+   /* Propiedades de alineacion para los elementos  de la grilla*/
+
+     /*justify-items: center ;
+     align-items: start;  con estas propiedades  podemos alinear los elementos */ 
+
+}
+
+.item{
+    
+    border:  5px solid #00bcd4;
+}
+
+.item2{
+    justify-self: start;
+    align-self: end;
+}
+
