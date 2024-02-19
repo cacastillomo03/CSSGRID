@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    height: 100vh;
+}
+
+.container{
+
+    min-height: 100vh;
+    border: 5px solid #0000;
+    background-color: aqua;
+    display: grid;
+    place-content: center;
+    grid-template-columns:  minmax(30px, 200px)  70px  minmax(60px, 250pc) ;
+    grid-template-rows: repeat(3, auto);
+}
+
+
+.item{
+    border: 5px solid  blue;
+    font-size: 2rem;
+}
